@@ -1,0 +1,12 @@
+syntax = "proto3";
+package lecture.events;
+
+message LectureCreated {
+  string courseId = 1;
+  string lectureId = 2;
+}
+
+message LectureDeleted {
+  string courseId = 1;
+  string lectureId = 2;
+}

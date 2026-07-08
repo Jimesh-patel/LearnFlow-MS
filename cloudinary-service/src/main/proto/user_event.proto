@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package user.events;
+
+message UserPhotoUpdated {
+  string userId = 1;
+  string oldPhotoUrl = 2;
+  bytes imageData = 3;
+}
+
+message UserPhotoUploadCompleted {
+  string userId = 1;
+  string newPhotoUrl = 2;
+}

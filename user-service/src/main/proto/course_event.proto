@@ -1,0 +1,7 @@
+syntax = "proto3";
+package course.events;
+
+message CourseCreated {
+  string courseId = 1;
+  string creatorId = 2;
+}
